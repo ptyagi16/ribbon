@@ -15,7 +15,7 @@ Gem::Specification.new 'ribbon' do |gem|
   gem.author = 'Matheus Afonso Martins Moreira'
   gem.email = 'matheus.a.m.moreira@gmail.com'
 
-  gem.files = `git ls-files`.split "\n"
+  gem.files = Dir['{lib,doc,test}/**/*', 'README*', 'LICENSE*']
 
   gem.add_runtime_dependency 'jewel'
 
